@@ -4,12 +4,13 @@
 
 # field survey
 
-# DOM
+## DOM
 
 element tree. events bubble from root up the tree then down.
 
-
 ## node-red
+
+Flow based programming system
 
 **[Components](https://nodered.org/docs/user-guide/concepts#node)** are JS functions that call the node-red api to send/receive/reply. At most one input port (?) and multiple output ports.
 
@@ -19,7 +20,10 @@ element tree. events bubble from root up the tree then down.
 
 ## noflo
 
+Flow-based programming system
+
 [`getComponents()` export](https://noflojs.org/documentation/components/#component-api) is used to define noflo Components. Components define:
+
 * description/icon
 * inPorts/outPorts **[ports](https://noflojs.org/api/Ports/) extend EventEmitter,** with a datatype
 * process
@@ -28,12 +32,22 @@ element tree. events bubble from root up the tree then down.
 
 [Information Packet/IP](https://noflojs.org/api/IP/) is transmitted through. A stream is designated via an openBracket & closeBracket packet. Cloneable is an option. Schema, scope, datatype, owner, cloneable, port-index metadata.
 
-
 ## node-machine
 
+A userland abstraction for processes:
 
+* friendlyName/description/extendedDescription/moreInfoUrl/sideEffects (string)/sync
+* inputs object
+** friendlyName/description/extendedDescription/moreInfoUrl/sideEffects again
+** required/example/whereToGet
+* exits
+** name
+** outputFriendlyName/outputDescription/description/moreInfoUrl/extendedDescription
+* fn(inputs, exits) the thing itself
 
 ## mozilla WoT capabilities
+
+IoT service with basic ReST interface
 
 Defines a `https://iot.mozilla.org/schemas/` JSON-LD context. Capabilities (MotionSensor), Properties (OnOffProperty), Actions (ToggleAction), events (AlarmEvent).
 
@@ -41,7 +55,35 @@ Defines a `https://iot.mozilla.org/schemas/` JSON-LD context. Capabilities (Moti
 
 ## Wayland
 
+Display server, hosts a number of uniquely identified objects talked to over Wayland protocol. [Object types](https://wayland.freedesktop.org/docs/html/ch04.html):
 
+* wl_display
+* wl_registry - the registry singleton
+* wl_callback - callback object
+* wl_compositor - compositor singleton
+* wl_shm_pool - shared memory pool
+* wl_shm
+* wl_buffer - content for a wl_surface
+* wl_data_offer - offer to transfer data
+* wl_data_source - offer to transfer data
+* wl_data_device - data transfer device
+* wl_data_device_manager - data transfer interface
+* wl_shell - replaced by xdg_shell
+* wl_shell_surface - desktop style metadata interface
+* wl_surface - an onscreen interface
+* wl_seat - group of input devices
+* wl_pointer - pointer input device
+* wl_keyboard - keyboard input device
+* wl_touch - touchscreen input device
+* wl_output - compositor output region
+* wl_region
+* wl_subcompositor - subsurface compositing
+* wl_surface - subsurface interface to a wl_surface
+
+## SOLID
+
+* WebID
+* JSON-LD
 
 ## OpenAPI
 
