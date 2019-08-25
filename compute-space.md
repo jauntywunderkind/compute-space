@@ -53,6 +53,8 @@ Defines a `https://iot.mozilla.org/schemas/` JSON-LD context. Capabilities (Moti
 
 ## OpenServiceBroker
 
+interface between platforms & service brokers. service broker advertises catalog of services & plans.
+
 ## Wayland
 
 Display server, hosts a number of uniquely identified objects talked to over Wayland protocol. [Object types](https://wayland.freedesktop.org/docs/html/ch04.html):
@@ -87,16 +89,20 @@ Display server, hosts a number of uniquely identified objects talked to over Way
 
 ## OpenAPI
 
+Define apis.
+
+Uses JSON-Schema for schemas, JSON Reference for Reference object.
+
 object types:
 
 * info
 * contact
 * license
-* server
-* server variable
-* components
+* server - url, desc, vars
+* server variable - enum array, default
+* components - schemas, responses, parameters, examples, requestBodies, headers, securitySchemes, links, callbacks
 * paths
-* path item
+* path item - http verb "operation", servers, parameters
 * operation
 * external docs
 * parameter
@@ -111,7 +117,7 @@ object types:
 * header
 * tag
 * reference
-* schema
+* schema - json schema
 * discriminator
 * xml
 * security scheme
