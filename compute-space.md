@@ -87,9 +87,43 @@ Display server, hosts a number of uniquely identified objects talked to over Way
 
 ## OpenAPI
 
+object types:
+
+* info
+* contact
+* license
+* server
+* server variable
+* components
+* paths
+* path item
+* operation
+* external docs
+* parameter
+* request body
+* media type
+* encoding
+* responses
+* response
+* callback
+* Example
+* link
+* header
+* tag
+* reference
+* schema
+* discriminator
+* xml
+* security scheme
+* oauth flows
+* oauth flow
+* security requirements
+
 ## LwM2M
 
 Lightweight Machine-to-Machine is a COAP protocol for rpc &c. Has a big **[registry](https://github.com/OpenMobileAlliance/lwm2m-registry)** of defined object types. Data Input objects and Log objects well represented. 
+
+client objects bootstrap themselves with the server to come online.
 
 Some interesting specs:
 * [EventLog](https://github.com/OpenMobileAlliance/lwm2m-registry/blob/test/LwM2M_EventLog-V1_0.xml)
@@ -99,13 +133,47 @@ Some interesting specs:
 
 ## UPnP
 
-DHCP/AutoIP, SSDP discovery, description xml, soap control, GENA eventing
+auto-confniguring network protocol for home net services.
+
+* DHCP/AutoIP
+* SSDP discovery
+* description xml
+* soap control
+* GENA eventing (multicast 
 
 ## Second Screen protocol
 
 ## Systemd
 
-DBus based api.
+Master control process for a Linux system, manages all programs running. Has a variety of abstractions.
+
+Manager, the singleton representing systemd daemon at large:
+
+* units: running things. list units, get units, start unit, start unit replace, stop unit, reload unit, restart unit, try restart unit, reload or restart unit, reload or try restart unit, kill unit, set unit properties, start transient unit, signal: new, removed
+* unit files: list unit files, get unit file state, enable unit files, disable, reenable, link, preset, mask, unmask, signal changed
+* job: single-shot executions. get job, cancel job, clear jobs. signal: new, removed
+* snapshot: file system checkpoints? create, remove
+* general: reload, reexecute, exit, reboot, poweroff, halt, kexec, switchroot, signal: startup finished, reloading.
+* environment: set environment, unset environment, unset and set
+* target: set default, get default
+* props: version, features, tainted, firmware timestamp, loader timestamp, kernel timestamp, initrd timestamp, usrspace timestamp, finish timestmap, generators start/finish timestmap, units loads start/finish timestamp, security start/finish timestamp, loglevel (rw), nnames, njobs, ninstalled jobs, n failed jobs, progress, environment, confirm spawn, show status, unit path, default std out/stderr, runtime watchdog usec, virtualization, arch
+
+Unit, a systemd resource of some kind
+* lifecycle: start/stop/reload/restart/tryrestart/reload restart/ reload or try restart/kill/ reset failed/ set properties
+* props: id, name, following, requires, requiresoverridable, requisite, requisiteoverridable, wants, bindsto, partof, required by, requiredbyoverrides...
+
+Unit types:
+* serivce: a resident daemon.
+* socket: an endpoint which will be passed to the service, potentially starting the service on demand. 
+* device: a system device
+* mount: information about how file systems are mounted
+* automount: a link to automatically create a mount on demand
+* swap
+* target: a grouping of units with a well known synchronization point
+* path: a file path
+* timer: a cron like regularly running thing
+* slice: hierharchitically managed resources of a group of processes
+* scope
 
 ## CloudEvents
 
@@ -320,8 +388,6 @@ Control Flow:
 * While (loop), repeatUntil, forEach
 * Pick
 
-
-
 ### XRD
 
 [Extensible Resource Descriptor](http://docs.oasis-open.org/xri/xrd/v1.0/os/xrd-1.0-os.html) and [schema](http://docs.oasis-open.org/xri/xrd/v1.0/os/xrd-1.0-os.xsd)
@@ -348,7 +414,6 @@ Control Flow:
 ## Workflow Nets
 
 ## YAWL Eindhoven
-
 
 ## Event Driven Process Chain
 
