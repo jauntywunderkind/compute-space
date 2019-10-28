@@ -462,4 +462,55 @@ Enterprise architecture:
 
 ## OpenTelemetry
 
+## OpenMetrics
 
+## Open Application Model
+
+## Jini/ApacheRiver/JavaSpaces
+
+[Gigaspaces' Intro to Jini docs](https://docs.gigaspaces.com/xap/12.2/overview/about-jini.html)
+
+Jini defines:
+
+* Lookup service - registry system
+* Discovery & join
+* Entry interface. Core construct to enable three operations:
+** store
+** match
+** fetch
+* Leasing
+* Remote Events
+** registrant registers listener with generator
+** generator returns registration for registrant/listener
+** registrant returns registration to the listener
+** generator fires event to listener
+* Transaction Processing Service
+
+
+## Service Modeling Language
+
+Applications as instances of models, 
+
+## wf-net
+
+## SORCER
+
+> Everything anywhere/anytime (AWAT) as a service for you (EaaaaSY)
+
+[sorcer](http://sorcersoft.org/project/site/)
+
+> A service mogram represents a service model that is executed by a dynamic federation of services. In other words a mogram exerts the collaborating service providers in a service federation created at runtime as specified by the mogram. Mograms are written in the Service Modeling Language (SML) that consists of two parts: Context Modeling Language (CML) and Exertion-Oriented Language (EOL). The former is used to specify data models (data contexts) for exertions and collections of interrelated functional compositions - context models. While CML is used for declarative service-oriented programming, EOL is focused on object-oriented composites of services - exertions. A model is a declarative representation of something, especially a system, phenomenon, or service that accounts for its properties and is used to study its characteristics expressed in terms of service variables associated with functional compositions.
+
+- [Context modeling language](http://sorcersoft.org/project/site/context-models.html)
+
+* context
+** aggregates multipled named "entries" aka variables
+** subcontexts
+* entry
+* name/value pair
+** can be tagged input/output
+** can be referential 
+** optionally positional
+* model
+
+ 
