@@ -495,13 +495,16 @@ Applications as instances of models,
 
 ## SORCER
 
+> Service ORiented Computing EnviRonment
+
 > Everything anywhere/anytime (AWAT) as a service for you (EaaaaSY)
 
-[sorcer](http://sorcersoft.org/project/site/)
+
+[sorcer](http://sorcersoft.org/project/site/) site, [papers](https://github.com/pfirmstone/SORCER/tree/master/docs/papers)
 
 > A service mogram represents a service model that is executed by a dynamic federation of services. In other words a mogram exerts the collaborating service providers in a service federation created at runtime as specified by the mogram. Mograms are written in the Service Modeling Language (SML) that consists of two parts: Context Modeling Language (CML) and Exertion-Oriented Language (EOL). The former is used to specify data models (data contexts) for exertions and collections of interrelated functional compositions - context models. While CML is used for declarative service-oriented programming, EOL is focused on object-oriented composites of services - exertions. A model is a declarative representation of something, especially a system, phenomenon, or service that accounts for its properties and is used to study its characteristics expressed in terms of service variables associated with functional compositions.
-
 - [Context modeling language](http://sorcersoft.org/project/site/context-models.html)
+
 
 * context
 ** aggregates multipled named "entries" aka variables
@@ -512,5 +515,17 @@ Applications as instances of models,
 ** can be referential 
 ** optionally positional
 * model
+** again an aggregation of entries
+** itself can be value()'d / run
+** return can be a context
+** "active relationships between entries that can implement Evaluation interface"
+** "in contrast to data contexts, an ent-model entry is evaluated and then the value of the entry of the Evaluation type is getValue()"
+** itself is evaluated
+* par-model?
+* srv-model
+** from running exert() on a mogram
+** mogram is result of a service 
+** exertions, context, data contexts are all mograms
+** therefore all can provide services for srv-model
 
- 
+> Exertion-oriented Language (EOL) ... is a metamodel in the form of collection of concepts that are the vocabulary with which you are talking about creating and requesting services.
