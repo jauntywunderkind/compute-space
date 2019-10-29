@@ -685,3 +685,47 @@ From an [explainer](https://medium.com/@AloisReitbauer/trace-context-and-the-roa
 * xpdl
 * uml
 * epc
+
+## Process Model Ontology (PM)
+
+[Process Model Ontology](https://privatealpha.com/ontology/process-model/1#) is an ontology for processes. Extends [Information Based Information System (bis)](https://privatealpha.com/ontology/ibis/1#).
+
+### model
+
+* Task
+* Action
+* Method
+* Event
+* Position
+* State
+* Target
+* budget
+* initiates
+* subtask
+* receipient
+* responsible
+* performer
+* variant
+* desires
+* outcome
+* context
+
+### IBIS
+
+* Issue
+* Argument
+* Position
+* Network
+* concerns
+* questions
+* suggests
+* generalizes/specializes
+* replaces
+* endorses
+* supports
+* skos:Concept
+* skos:conceptScheme
+* foaf:Agent
+
+###
+
