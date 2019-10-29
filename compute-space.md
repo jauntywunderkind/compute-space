@@ -653,7 +653,32 @@ Also defines extensions for various tasks:
 
 ## Process Specification Langauge - PSL
 
-NIST
+NIST spec, has [overview](https://www.nist.gov/publications/process-specification-language-psl-overview-and-version-10-specification), ["essence"](https://www.nist.gov/publications/essence-process-specification-language) & ["ontology"](https://www.nist.gov/publications/ontology-process-specification-language). Describes fundamental process of *manufacturing processes*.
+
+claims relations to:
+A Language forProcess Specification (ALPS) Project
+the Toronto Virtual Enterprise (TOVE)
+the Enterprise Ontology Project
+Core Plan Representation  (CPR)
+
+claims collaboration with with
+* Shared Planningand Activity Representation (SPAR)
+* the Process Interchange Format (PIF)
+* WorkFlow Management Coalition (WfMC)
+
+model:
+* psl core
+* subactivity
+* activity-occurrences
+* states
+* integer and durations
+* ordering & relations of activities
+* ordering & relations of complex sequences of activities
+* nondeterministic actions
+* reasonsing about state
+* internal activities
+* temporal ordering relationships
+* junctions
 
 ## w3c distributed-tracing
 
@@ -726,6 +751,3 @@ From an [explainer](https://medium.com/@AloisReitbauer/trace-context-and-the-roa
 * skos:Concept
 * skos:conceptScheme
 * foaf:Agent
-
-###
-
