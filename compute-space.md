@@ -542,17 +542,17 @@ elaboration on workflow nets that show
 
 state-charts
 
-## workflow management coalition (WFMC)
+## workflow management coalition (WfMC)
 
-[workflow management coalition model](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.198.5206&rep=rep1&type=pdf)
+[workflow management coalition model](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.198.5206&rep=rep1&type=pdf) doc. has pre
 
-defines pieces of a model, and talks to the pieces, but doesn't seem to define what these interfaces would actually look like
+defines pieces of a model, and talks to the pieces, and some times has specs for these interfaces. "workflow api" (wapi)
 
-workflow model:
+workflow reference model:
 * workflow enactment service
 	* this is the core "executor" which has the various interfaces
 	> The  workflow  enactment  service  provides  the  run-time  environment  in  which  process  instantiationand   activation   occurs,   utilising   one   or   more   workflow   management   engines,   responsible   forinterpreting  and  activating  part,  or  all,  of  the  process  definition  and  interacting  with  the  externalresources necessary to process the various activities.
-* process definition
+* process definition - see: WPLD
 ** workflow type definition
 ** activity
 ** workflow relevant data
@@ -642,6 +642,19 @@ Also defines extensions for various tasks:
 * software telemetry
 * time
 
+## OMG Workflow Facility
+
+
+## XPLD
+
+## Workflow Process Definition Language (WPDL)
+
+## Rrocess Interchange Framework
+
+## Process Specification Langauge - PSL
+
+NIST
+
 ## w3c distributed-tracing
 
 [distributed tracing wg](https://www.w3.org/2018/distributed-tracing/) maintains [trace context](https://www.w3.org/TR/trace-context) and a [trace context registry](https://www.w3.org/TR/trace-context-protocols-registry/) spec. 
@@ -650,3 +663,19 @@ From an [explainer](https://medium.com/@AloisReitbauer/trace-context-and-the-roa
 
 > In order to make distributed tracing work, we need a way to pass context information from one transaction to the next. Such transaction context, or simply “context” for short, is represented by one or more unique identifiers that enable linkage between the client-side and the server-side of each transaction.
 
+
+## Yet Another Workflow Language (YAWL)
+
+[yawl](http://www.yawlfoundation.org/) maintains a [book](http://www.yawlfoundation.org/yawlbook/downloads.html), and is an integrated IDE.
+
+
+## Workflow Patterns
+
+[workflow patterns](http://workflowpatterns.com/) has patterns & evaluations of workflow systems.
+
+patterns categories:
+* control-flow
+* data
+* resource
+* exception
+* event-log imperfections
