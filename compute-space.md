@@ -649,7 +649,24 @@ Also defines extensions for various tasks:
 
 ## Workflow Process Definition Language (WPDL)
 
-## Rrocess Interchange Framework
+## Process Interchange Framework (PIF)
+
+[1.0](http://ccs.mit.edu/pifmain.html), but there was a [1.2 document](http://ccs.mit.edu/pif/pifDocs.htm).
+
+entities:
+* activity
+	* decision
+* object
+	* agent
+* timepoint
+* relation
+	* creates
+	* modifies
+	* performs
+	* users
+	* before
+	* successor
+	* activity-status
 
 ## Process Specification Langauge - PSL
 
