@@ -663,19 +663,25 @@ From an [explainer](https://medium.com/@AloisReitbauer/trace-context-and-the-roa
 
 > In order to make distributed tracing work, we need a way to pass context information from one transaction to the next. Such transaction context, or simply “context” for short, is represented by one or more unique identifiers that enable linkage between the client-side and the server-side of each transaction.
 
-
 ## Yet Another Workflow Language (YAWL)
 
 [yawl](http://www.yawlfoundation.org/) maintains a [book](http://www.yawlfoundation.org/yawlbook/downloads.html), and is an integrated IDE.
-
 
 ## Workflow Patterns
 
 [workflow patterns](http://workflowpatterns.com/) has patterns & evaluations of workflow systems.
 
-patterns categories:
-* control-flow
+### [patterns categories](http://workflowpatterns.com/patterns/)
 * data
 * resource
+* control-flow
 * exception
+* presentation
 * event-log imperfections
+
+### [evalutions](http://workflowpatterns.com/evaluations/standard/)
+* bpel
+* bpmn
+* xpdl
+* uml
+* epc
