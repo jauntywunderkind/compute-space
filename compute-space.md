@@ -529,3 +529,115 @@ Applications as instances of models,
 ** therefore all can provide services for srv-model
 
 > Exertion-oriented Language (EOL) ... is a metamodel in the form of collection of concepts that are the vocabulary with which you are talking about creating and requesting services.
+
+## workflow-nets
+
+a petri-net
+
+## causal-nets
+
+elaboration on workflow nets that show 
+
+## xstate & scxml
+
+state-charts
+
+## workflow management coalition (WFMC)
+
+[workflow management coalition model](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.198.5206&rep=rep1&type=pdf)
+
+* workflow model
+* workflow enactment service
+* process definition
+* workflow client functions
+* invoked application functions
+* workflow interoperability
+* systems administration
+	* user management
+	* role management
+	* audit management
+	* resource control
+	* process supervisory functions
+
+talks about Open Management Information Base (oMIB) & SNMP management 
+
+## mxml 
+
+from [a meta model for process mining data](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.79.3760&rep=rep1&type=pdf)
+
+> Modern process-aware information systems store detailed in-formation about processes as they are being executed. This kind of infor-mation can be used for very different purposes. The termprocess miningrefers to the techniques and tools to extract knowledge (e.g., in the formof models) from this. 
+
+> We give the requirements for the datathat should be available, both informally and formally. Furthermore, weback our meta model up with an XML format called MXML
+
+* cites WFMC's model & particularly the systems admin "interface 5"
+* thesis also begat the process mining tool [ProM](http://www.promtools.org/doku.php?id=tutorial:start)
+
+### model
+
+WorkflowLog has Processes
+Process has ProcessInstances
+ProcessInstance composes AuditTrailEntry
+audit-trail-entry composes WorkflowModelElements
+process aggregates WorkflowModelElements
+
+## xes
+
+[Extensible event system](https://xes-standard.org/xesstandarddefinition)
+
+> The XES standard defines a grammar for a tag-based language whose aim is to provide designers of information systems with a unified and extensible methodology for capturing systems behaviors by means of event logs and event streams is defined in the XES standard.
+
+It's own xml-schema system for defining log schemas, with a variety of extensions. also has a processing model.
+
+log has traces
+traces have event
+events aggregate a set of attributes. attributes on log are "global" attributes to events.
+attributes can either be simple things (string, date, boolean, id), or lists/containers
+nested attributes
+classifiers fire "activity" 
+
+calls MXML it's precedessor
+
+Also defines extensions for various tasks:
+* artifact lifecycle
+* concept
+* [cost](http://www.xes-standard.org/cost.xesext)
+** total
+** drivers
+** currency
+** amount
+** type
+* [identity](http://www.xes-standard.org/identity.xesext)
+** id
+* [lifecycle](http://www.xes-standard.org/lifecycle.xesext)
+** model
+** transition
+** state
+* [micro](http://www.xes-standard.org/micro.xesext)
+** level
+** parentId
+** length
+* organizational
+* semantic
+* software communication
+* [software event](http://www.xes-standard.org/swevent.xesext)
+	* exhaustive caller/callee field
+	* return value 
+	* app
+		* name
+		* tier
+		* node
+		* session
+	* ex thrown/caught
+	* params / param value 
+	* value-type
+* software telemetry
+* time
+
+## w3c distributed-tracing
+
+[distributed tracing wg](https://www.w3.org/2018/distributed-tracing/) maintains [trace context](https://www.w3.org/TR/trace-context) and a [trace context registry](https://www.w3.org/TR/trace-context-protocols-registry/) spec. 
+
+From an [explainer](https://medium.com/@AloisReitbauer/trace-context-and-the-road-toward-trace-tool-interoperability-d4d56932369c) article's section **Context propagation: Core building block of distributed tracing**,
+
+> In order to make distributed tracing work, we need a way to pass context information from one transaction to the next. Such transaction context, or simply “context” for short, is represented by one or more unique identifiers that enable linkage between the client-side and the server-side of each transaction.
+
