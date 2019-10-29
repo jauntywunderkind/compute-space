@@ -546,9 +546,19 @@ state-charts
 
 [workflow management coalition model](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.198.5206&rep=rep1&type=pdf)
 
-* workflow model
+defines pieces of a model, and talks to the pieces, but doesn't seem to define what these interfaces would actually look like
+
+workflow model:
 * workflow enactment service
+	* this is the core "executor" which has the various interfaces
+	> The  workflow  enactment  service  provides  the  run-time  environment  in  which  process  instantiationand   activation   occurs,   utilising   one   or   more   workflow   management   engines,   responsible   forinterpreting  and  activating  part,  or  all,  of  the  process  definition  and  interacting  with  the  externalresources necessary to process the various activities.
 * process definition
+** workflow type definition
+** activity
+** workflow relevant data
+** invoked application
+** transition conditions
+** role
 * workflow client functions
 * invoked application functions
 * workflow interoperability
@@ -559,7 +569,6 @@ state-charts
 	* resource control
 	* process supervisory functions
 
-talks about Open Management Information Base (oMIB) & SNMP management 
 
 ## mxml 
 
