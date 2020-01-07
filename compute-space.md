@@ -772,3 +772,16 @@ From an [explainer](https://medium.com/@AloisReitbauer/trace-context-and-the-roa
 ## airflow
 
 ## cadence
+
+## argo workflow
+
+* step = container
+* dag of tasks
+* loops
+* parameterization
+* conditionals
+* timeouts, retry (step & workflow level)
+* resubmit
+* suspend/resume/cancel
+* works with other kubernetes objects
+* exit hooks
