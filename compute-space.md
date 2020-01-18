@@ -789,3 +789,23 @@ From an [explainer](https://medium.com/@AloisReitbauer/trace-context-and-the-roa
 ## micro-profile long running actions
 
 Eclipse project for [long running actions](https://github.com/eclipse/microprofile-lra), based off OASIS Web Services Composite Application Framework Technical Committee's Long Running Action transaction model.
+
+LRA States:
+
+* Active
+* Cacnelling
+* Cancelled
+* FailedToCancel - participant's compensation failed
+* Closing
+* Closed
+* FailedToClose - participant's complete failed
+
+Enlisted states:
+
+* Active
+* Compensationg
+* FailedToCompensate
+* Compensated
+* Completing
+* FailedToComplete
+* Completed
