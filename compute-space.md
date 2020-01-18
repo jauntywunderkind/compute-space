@@ -785,3 +785,7 @@ From an [explainer](https://medium.com/@AloisReitbauer/trace-context-and-the-roa
 * suspend/resume/cancel
 * works with other kubernetes objects
 * exit hooks
+
+## micro-profile long running actions
+
+Eclipse project for [long running actions](https://github.com/eclipse/microprofile-lra), based off OASIS Web Services Composite Application Framework Technical Committee's Long Running Action transaction model.
