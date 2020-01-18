@@ -815,3 +815,9 @@ Enlisted states:
 "Agents that monitor and act on your behalf". [Huginn](https://github.com/huginn/huginn)
 
 Examples they list: scraping, feeds, connections to mq/chat, webhooks, running js
+
+## Sockethub
+
+ActivityStreams & redis based central "messaging system for social and other interactive messaging applications."
+
+"Transaction layer for web applications to communicate wiht other protocols & services" -[About](http://sockethub.org/about/)
