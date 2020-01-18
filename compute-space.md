@@ -809,3 +809,9 @@ Enlisted states:
 * Completing
 * FailedToComplete
 * Completed
+
+## Huginn
+
+"Agents that monitor and act on your behalf". [Huginn](https://github.com/huginn/huginn)
+
+Examples they list: scraping, feeds, connections to mq/chat, webhooks, running js
